@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+
+<script>
+function changeColor(color) {
+	var c = document.getElementById('container');
+	c.style.backgroundColor = color;
+}
+
+function toUpperCase() {
+	var w = document.getElementById('word');
+	w.value = w.value.toUpperCase();
+}
+
+function addBorder() {
+	var x = document.getElementById('box');
+	x.style.border = "3px solid red";
+}
+
+function removeBorder() {
+	var x = document.getElementById('box');
+	x.style.border = "none";
+}
+</script>
+
+<body onload="alert('웹 페이지 로딩됨')">
+<div id="container">
+	<input type="radio" name="color" onClick="changeColor('yellow')" />노란색
+	<input type="radio" name="color" onClick="changeColor('blue')" />파란색
+	<input type="radio" name="color" onClick="changeColor('white')" />원래대로
+	<br />
+	<input type="text" id="word" onchange="toUpperCase()" />
+	<div id="box" onmouseover="addBorder()" onmouseout="removeBorder()">
+		마우스를 위에 올려보세요
+	</div>
+</div>
+</body>
+</html>
