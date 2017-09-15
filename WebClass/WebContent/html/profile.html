@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>프로필</h1>
+<!-- js가 이때 헤드에 있다면 profile을 찾지못해 뜨지 않는다. -->
+<p id="profile"></p>
+<script>
+var id = "2301";
+var name = "홍길동";
+var age = 18;
+var height = 173.5;
+var hobby = ["게임","영화","전시회"];
+
+console.log(typeof id);
+console.log(typeof age);
+console.log(typeof hobby);
+console.log(typeof document.getElementById("profile"));
+
+document.getElementById("profile").innerHTML= 
+	"<ul><li>학번: " + id + "</li>" +
+	"<li>이름: " + name + "</li>" +
+	"<li>나이: " + age + "세</li>" +
+	"<li>키: " + height + "cm</li>" +
+	"<li>취미: " + hobby + "</li></ul>";
+</script>
+</body>
+</html>

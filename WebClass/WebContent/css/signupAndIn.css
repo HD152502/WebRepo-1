@@ -1,0 +1,43 @@
+body {
+	background-color: #ECEFF1;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: white;
+	width: 500px;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+form {
+	padding: 40px;
+	box-shadow: 0px 0px 20px #BDBDBD;
+}
+
+.header {
+	width: 100%;
+	color: #2196F3;
+	font-size: 7rem;
+	font-weight: lighter;
+	text-align: center;
+	background-color: #ECEFF1;
+	height: 170px;
+}
+
+.text {
+	color: darkgray;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+.center {
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	width: 40%;
+	height: 40px;
+}
