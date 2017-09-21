@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.simple.JSONObject;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
 /**
  * Servlet implementation class loginServlet
  */
@@ -49,9 +54,20 @@ public class loginServlet extends HttpServlet {
 		 *   "id": "testid"
 		 * }
 		 */
-		out.println("{");
-		out.println("\"id\":" + "\"" + id + "\"");
-		out.println("}");
+//		out.println("{");
+//		out.println("\"id\":" + "\"" + id + "\"");
+//		out.println("}");
+		
+		// JSON Simple Library
+//		JSONObject json = new JSONObject();
+//		json.put("id", id);
+//		out.write(json.toJSONString());
+		
+		Gson gson = new Gson();
+		JsonObject object = new JsonObject();
+		object.addProperty("id", id);
+		String json = gson.toJson(object);
+		out.write(json);
 		
 		out.close();
 	}
