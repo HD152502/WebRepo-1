@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
 <ul class="navbar-nav mr-auto">
 <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-<a class="nav-link" href="a.html">Menu1</a>
+<a class="nav-link" href="/WebClass/session">메뉴1</a>
 </li>
 <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-<a class="nav-link" href="p.html">Menu2</a>
+<a class="nav-link" href="p.html">메뉴2</a>
 </li>
 <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-<a class="nav-link" href="event.html">Menu3</a>
+<a class="nav-link" href="event.html">메뉴3</a>
 </li>
 </ul>
