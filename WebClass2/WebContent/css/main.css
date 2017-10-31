@@ -1,0 +1,60 @@
+.title {
+	font-size: 2.5rem;
+	font-weight: lighter;
+}
+
+.lead {
+	margin-bottom: 30px;
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+#introduce, #favorite, #dream {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.card-container {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.text-muted {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+.card-body {
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.sports {
+	margin-top: 10px;
+	width: 47.5%;
+	margin-bottom: 10px;
+}
+
+.card:nth-child(1) {
+	margin-right: 5%;
+}
+
+.dream-title {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	margin-top: 15px;
+}
+
+.introduce-content {
+	margin-top: 15px;
+	line-height: 180%;
+	font-size: 1.1rem;
+	font-weight: lighter;
+}
+
+.contents-title {
+	font-size: 2rem;
+	font-weight: 400;
+}
