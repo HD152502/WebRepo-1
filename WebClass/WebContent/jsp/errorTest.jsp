@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="org.dimigo.vo.UserVO" %>
+<%@ page errorPage="error.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-id : ${ user.id } <br/>
-name : ${ user.name } <br/>
-nickname : ${ user.nickname }
+<%
+	int i = 100 / 0;
+%>
 </body>
 </html>

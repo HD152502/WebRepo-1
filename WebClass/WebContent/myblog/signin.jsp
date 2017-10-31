@@ -15,7 +15,6 @@
 
 	<%
   		String id = (request.getParameter("id") == null) ? "" : (String) request.getParameter("id");
-  		String pwd = (request.getParameter("pwd") == null) ? "" : (String) request.getParameter("pwd");
   	%>
 
 	<div>
@@ -28,7 +27,7 @@
 				</div>
 				<div class="form-group">
 					<label for="pwd" class="text">Password</label>
-					<input value='<%= pwd %>' name="pwd" type="password" class="form-control" id="pwd" placeholder="Password" required>
+					<input name="pwd" type="password" class="form-control" id="pwd" placeholder="Password" required>
 				</div>
 				<input type="submit" class="btn btn-primary center" />	
 			</form>
