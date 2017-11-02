@@ -41,7 +41,7 @@ function menu_out(e) {
   	
     <%-- 세션에 사용자 정보가 없는 경우 --%>
     <c:if test="${ user == null }">
-    	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/login">Sign in</a>
+    	<a class="text-bold text-white" style="text-decoration: none" href="${ contextPath }/jsp/login.jsp">Sign in</a>
     	<span class="text-bold text-white">&nbsp; or &nbsp;</span>
     	<a class="text-bold text-white" style="text-decoration: none" href="">Sign up</a>
     </c:if>
