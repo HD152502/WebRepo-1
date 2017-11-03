@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.dimigo.action.IAction;
 import org.dimigo.action.LoginAction;
+import org.dimigo.action.LogoutAction;
 
 /**
  * Servlet implementation class ActionServlet
@@ -33,6 +34,7 @@ public class ActionServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
     	actions.put("login", new LoginAction());
+    	actions.put("logout", new LogoutAction());
     }
 
 	/**

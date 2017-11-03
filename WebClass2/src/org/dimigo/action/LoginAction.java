@@ -23,7 +23,7 @@ public class LoginAction implements IAction {
 			request.setCharacterEncoding("utf-8");
 			String id = request.getParameter("id");
 			String pwd = request.getParameter("pwd");
-			System.out.printf("id : %s, pwd : %s", id, pwd);
+			System.out.printf("id : %s, pwd : %s \n", id, pwd);
 			
 			// 2. 입력값 검증
 			validate(id, pwd);
